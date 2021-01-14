@@ -7,9 +7,13 @@ if (isDark)
     const fadeInLayer = document.createElement('div');
 
     fadeInLayer.id = 'fade-in-layer';
+    body.style.opacity = '100%';
+    document.querySelector('html').style.backgroundColor = 'transparent';
 
     fadeInLayer.dataset.fadein = 'false';
     body.appendChild(fadeInLayer);
+
+
     setTimeout(() =>
     {
         fadeInLayer.dataset.fadein = 'true';

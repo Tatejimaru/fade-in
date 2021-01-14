@@ -1,7 +1,12 @@
-/* @media (prefers-color-scheme: dark)
+@media (prefers-color-scheme: dark)
 {
     html
     {
         background-color: black;
     }
-} */
+
+    body
+    {
+        opacity: 40%;
+    }
+}
