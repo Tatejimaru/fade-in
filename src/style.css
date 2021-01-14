@@ -1,0 +1,20 @@
+#fade-in-layer
+{
+    background-color: black;
+    transition: opacity 1000ms cubic-bezier(0.11, 0, 0.5, 0);
+    opacity: 60%;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    min-height: 100vh;
+    min-width: 100vw;
+    pointer-events: none;
+    z-index: 2147483647;
+}
+
+#fade-in-layer[data-fadein="true"]
+{
+    opacity: 0%;
+}
