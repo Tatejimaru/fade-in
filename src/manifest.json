@@ -28,9 +28,6 @@
                 "<all_urls>"
             ],
             "run_at": "document_end",
-            "css": [
-                "style.css"
-            ],
             "js": [
                 "content.js"
             ]
