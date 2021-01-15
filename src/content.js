@@ -15,24 +15,3 @@ setTimeout(() =>
 {
     fadeInLayer.dataset.fadein = 'true';
 }, 100);
-
-
-chrome.runtime.onMessage.addListener((message) =>
-{
-    if (message.message !== 'activated')
-    {
-        return true;
-    }
-
-    if (body.contains(fadeInLayer))
-    {
-        body.removeChild(fadeInLayer);
-    }
-
-    fadeInLayer.dataset.fadein = 'false';
-    body.appendChild(fadeInLayer);
-    setTimeout(() =>
-    {
-        fadeInLayer.dataset.fadein = 'true';
-    }, 100);
-});
