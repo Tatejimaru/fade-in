@@ -15,7 +15,7 @@ chrome.storage.local.get({
     'fadeTime': 1
 }, (result) =>
 {
-    const fadeTimeList = [600, 1200, 3000];
+    const fadeTimeList = [300, 1200, 3000];
     fadeInLayer.style.transition = `opacity ${fadeTimeList[result.fadeTime]}ms cubic-bezier(0.11, 0, 0.5, 0)`;
 });
 
